@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
 }
 
@@ -53,6 +53,11 @@ body {
 #main {
     transition: margin-left .5s;
     padding: 16px;
+    height: 900px;
+    background-image: url(../images/big-fish.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 @media screen and (max-height: 450px) {
@@ -66,7 +71,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
+  height: 60px;
 }
 
 .animate-logo {
@@ -80,7 +86,13 @@ header {
 }
 
 .animate-logo span {
-  font-family: 'Shojumaru', cursive;
-  font-size: 1.5rem;
+  font-family: 'Creepster', cursive;
+  font-size: 2rem;
   padding-left: 0.5rem;
+}
+
+/* Jumbotron */
+
+.jumbobron img {
+  max-width: 100%;
 }
