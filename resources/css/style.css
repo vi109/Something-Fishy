@@ -24,24 +24,24 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #000;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
-    opacity: 0.75;
+    padding-top: 4rem;
+    opacity: 0.7;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
     text-decoration: none;
     font-size: 1.5rem;
-    color: #818181;
+    color: #e8eef2;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #fca607;
 }
 
 .sidenav .closebtn {
@@ -53,7 +53,7 @@ body {
 }
 
 nav p {
-  color: #818181;
+  color: #e8eef2;
   padding-top: 40%;
   padding-left: 32px;
 }
@@ -63,12 +63,15 @@ nav p {
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 1rem;
+  }
+  .sidenav a {
+    font-size: 1rem;
+  }
 }
 
 /* Video */
-
 
 #myVideo {
     position: fixed;
@@ -89,7 +92,6 @@ nav p {
     font-size: 1rem;
     cursor: pointer;
     margin: 0.5rem 2rem;
-    background-color: darkGrey;
     opacity: 0.3;
 }
 
@@ -102,23 +104,30 @@ nav p {
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-  height: 50px;
+  height: 70px;
   position: fixed;
   z-index: 1;
   padding: 2rem;
 }
 
+.icons {
+  display: flex;
+  align-items: center;
+}
+
 .animate-logo {
   display: flex;
   align-items: center;
+  margin-right: 50%;
 }
 
 .animate-logo:hover,
 header span:hover {
     transform: scale(1.2);
+    transition: 500ms;
 }
 
 .animate-logo img {
@@ -140,11 +149,25 @@ a {
 .jumbobron {
   display: flex;
   flex-wrap: wrap;
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   padding-top: 3rem;
 }
 
-.jumbobron img {
+.item {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
   margin: 1rem;
+}
+
+.item img {
+  max-width: 100%;
+  transition: 500ms ease-out;
+  opacity: 0.7;
+}
+
+.item:hover img {
+  transform: scale(1.3);
+  opacity: 1;
 }
