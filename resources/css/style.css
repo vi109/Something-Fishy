@@ -28,12 +28,13 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    opacity: 0.75;
 }
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -51,9 +52,14 @@ body {
     margin-left: 50px;
 }
 
+nav p {
+  color: #818181;
+  padding-top: 40%;
+  padding-left: 32px;
+}
+
 #main {
     transition: margin-left .5s;
-    height: 900px;
 }
 
 @media screen and (max-height: 450px) {
@@ -84,6 +90,11 @@ body {
     cursor: pointer;
     margin: 0.5rem 2rem;
     background-color: darkGrey;
+    opacity: 0.3;
+}
+
+#myBtn:hover {
+  opacity: 1;
 }
 
 
@@ -97,14 +108,17 @@ header {
   height: 50px;
   position: fixed;
   z-index: 1;
-  border: purple solid 2px;
   padding: 2rem;
 }
-
 
 .animate-logo {
   display: flex;
   align-items: center;
+}
+
+.animate-logo:hover,
+header span:hover {
+    transform: scale(1.2);
 }
 
 .animate-logo img {
@@ -117,6 +131,10 @@ header {
   padding-left: 0.7rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Jumbotron */
 
 .jumbobron {
@@ -124,9 +142,9 @@ header {
   flex-wrap: wrap;
   width: 1000px;
   margin: 0 auto;
+  padding-top: 3rem;
 }
 
 .jumbobron img {
   margin: 1rem;
-
 }
