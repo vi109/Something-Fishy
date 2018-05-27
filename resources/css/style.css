@@ -181,69 +181,36 @@ header {
 }
 
 
-/* Jumbotron */
+/* Jumbotron  old: images in circle*/
 
 .jumbotron {
   display: flex;
-  justify-content: flex-end;
-  position: relative;
-  top: 70px;
-}
-
-.circle-container {
-  position: relative;
-  border-radius: 50%;
-  width: 36rem;
-  height: 36rem;
-  border: pink solid 1px;
-  margin-right: 6rem;
-}
-
-.item img,
-.item h2 {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-}
-
-h2 {
-  border: orange dashed 1px;
-  display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 3rem;
+  max-width: 60%;
 }
 
 .item {
-  display: block;
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -6.25rem;
+  width: 225px;
+  height: 225px;
+  border-radius: 5%;
+  overflow: hidden;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.deg0 {
-  transform: translate(18rem);
-} /* 15rem = half the width of the wrapper */
-.deg45 {
-  transform: rotate(45deg) translate(18rem) rotate(-45deg);
+.item img {
+  width: 225px;
+  height: 225px;
+  transition: 500ms ease-out;
+  opacity: 0.8;
 }
-.deg90 {
-  transform: rotate(90deg) translate(18rem) rotate(-90deg);
-}
-.deg135 {
-  transform: rotate(135deg) translate(18rem) rotate(-135deg);
-}
-.deg180 {
-  transform: translate(-18rem);
-}
-.deg225 {
-  transform: rotate(225deg) translate(18rem) rotate(-225deg);
-}
-.deg270 {
-  transform: rotate(270deg) translate(18rem) rotate(-270deg);
-}
-.deg315 {
-  transform: rotate(315deg) translate(18rem) rotate(-315deg);
+
+.item:hover img {
+  transform: scale(1.4);
+  opacity: 1;
 }
