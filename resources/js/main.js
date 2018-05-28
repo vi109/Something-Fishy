@@ -1,8 +1,8 @@
 // Push side bar
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.width = "13rem";
+    document.getElementById("main").style.marginLeft = "13rem";
 }
 
 function closeNav() {
