@@ -235,7 +235,7 @@ header {
   }
 }
 
-/* Jumbotron  zoon images */
+/* Jumbotron  zoom images */
 
 .jumbotron {
   display: flex;
@@ -247,8 +247,8 @@ header {
 }
 
 .item {
-  width: 225px;
-  height: 225px;
+  width: 250px;
+  height: 200px;
   border-radius: 5%;
   overflow: hidden;
   margin: 0.5rem;
@@ -258,7 +258,7 @@ header {
 }
 
 .item img {
-  width: 225px;
+  width: 250px;
   height: 225px;
   transition: 500ms ease-out;
   opacity: 0.8;
